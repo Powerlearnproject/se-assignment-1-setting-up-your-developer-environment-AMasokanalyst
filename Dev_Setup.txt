@@ -1,0 +1,137 @@
+Visual Studio Code step by step installation and setup
+    
+1. Visual Studio Code Installation Process:
+
+    • Go to https://code.visualstudio.com/Download and click download for windows.
+    • Open the downloaded file and Run the installer.
+    • Accept the license agreement and click next.
+    • Choose an installation location or leave it at default and then click next.
+    • Select 'create a desktop icon' and  'add to PATH(reccommended)' then click next
+    • Click Install to start the installation process.
+    • After installation, click Finish to launch Visual Studio Code.
+
+2. Visual Studio Code Setup:
+
+    • Launch VS Code a welcome screen for tips and tutorials will be displayed on the editor bar.
+    • Install necessary extensions like Python, live server, Code runner, Prettier, etc.
+    • Configure settings by clicking on the gear icon on the activity bar.
+    • Set up a project by opening a folder or creating a new file.
+    • To use Terminal integration click on the three dots on the navigation menu > Terminal > New Terminal.
+
+Version Control system installation and configuration
+1. Git Installation Guide
+
+    • Go to  https://github.com to download git and click on the download button for Windows.
+    • Open the downloded file and Run the Git Installer.
+    • Open the Git Setup Wizard and choose the destination location and components.
+    • Choose the start menu folder for Git shortcuts or leave it default.
+    • Choose the default editor for Git, such as Visual Studio Code.
+    • Adjust your PATH Environment to use Git from command line and third-party software.
+    • Choose the HTTPS Transport Backend and use the OpenSSL library.
+    • Configure line ending conversions and the Terminal Emulator.
+    • Check the default options for extra features.
+    • Enable experimental options if desired.
+    • Click Install to begin the installation.
+    • Complete the installation by clicking Finish.
+
+2. configuration of git
+
+    • Search git bash on the PC and run it as admnistrator
+        set user name by typing: git config --global user.name "Username" and press Enter.
+        set email: git config --global user.email "youremail@example.com" and pres Enter.
+    • To verify configuration type: git config --list. You will see your username and email address among other things listed there.
+    • To set VS Code as default editor run: git config --global core.editor "code --wait"
+
+3. Github account set up:
+
+   GitHub Website Sign-Up Process
+    • Go to https://github.com
+    • Click the Sign Up button.
+    • Enter email address and click Continue.
+    • Create password and choose username.
+    • Create account.
+    • Verify email address by opening and clicking on the verification link.
+    • Verification of email will redirects to GitHub.
+    • Usage preferences may be asked.
+   
+   Creating first repository
+    • Click + icon in upper-right corner.
+    • Select New repository.
+    • Add repository name.
+    • Initialize with README file.
+    • Click Create repository.
+
+   Cloning repository and pushing changes to github 
+    • Go to your repository.
+    • Click Code button.
+    • Copy repository HTTPS or SSH URL.
+    • Go to your git bash terminal and run: git clone 'paste repository URL you copied'
+      like this: git clone https://github.com/yourusername/yourrepository.git
+    • To stage changes run: git add . or (you can replace the period with the filename you want stage)
+    • To commit run: git commit -m "Your commit message"
+    • To push run: git push origin master/main0(depending on your branch name).  
+
+3. Python installation and setup
+
+    Installation
+
+    • Go to http://wwww.python.org.
+    • Hover over download tab and select windows.
+    • Select the recommended Python version, typically the latest stable release.
+    • Run the Installer to start the installation process.
+    • Customize Installation by adding Python to PATH.
+    • Choose Optional Features like pip, IDLE.
+    • Select "Install for all users" option.
+    • Wait for installation to complete and click "Close".
+
+    Setup
+   
+    • To verify installation open terminal and run: python --version.
+    • To check if pip is installed run: pip --version. if pip is not installed run:
+        "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"
+        "python get-pip.py"
+        check the version again buy running: pip --version
+    • Install Virtual environment by running: pip install virtualenv.
+    • Install packages using pip by running: pip install package_name (package_name might be django,numpy, etc.).
+    • Then go to VS Code and Search in the extensions for "Python" and install the Microsoft Python extension.
+
+4. MySQL setup and installation
+ 
+   MySQL installation
+
+    • Go to https://dev.mysql.com/downloads/windows/installer/5.7.html
+    • Choose the second download, it's a full installer.
+    • Open the downloaded.msi file.
+    • Choose a setup type, usually Developer Default or Server.
+    • Click Next.
+    • Check for required software.
+    • Install missing requirements.
+    • Click Execute.
+    • Choose installation path.
+    • Click Next.
+    • Start installation.
+    • Installation process may take a few minutes.
+
+   MySQL Server Configuration Process
+
+    • Choose Standalone MySQL Server / Classic MySQL Replication option.
+    • Set up MySQL Server Configuration, typically Development Machine.
+    • Choose connectivity options, default settings are usually fine.
+    • Choose Use Strong Password Encryption for Authentication.
+    • Create Root Account password and additional user accounts.
+    • Run MySQL as a Windows service and set it to start automatically.
+    • Apply Configuration: Click Execute to apply configuration settings.
+    • Finish the configuration after configuring and starting the server.   
+
+   MySQL Workbench Installation
+    • Open MySQL Workbench from Start menu or installation directory.
+    • Connect to MySQL Server by clicking + icon next to MySQL Connections.
+    • Fill in connection details: Connection Name, hostname, port, username, password.
+    • Test Connection and save connection.
+    • Access MySQL Server by double-clicking on new connection.
+    • Execute SQL queries on MySQL server.  
+
+
+For setting up my Development environment I followed these exact step and I didn't encounter any challenges.
+However, unfortunately I couldn't update my PC to windows 11, because according to Microsoft PC Health Check my PC
+doesn't meet all the requirements for windows 11, my PC processor being the main reason.     
